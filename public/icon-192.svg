@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </radialGradient>
+  </defs>
+  <!-- Main circular background simulating responsive native canvas -->
+  <rect width="192" height="192" rx="42" fill="url(#bg)" />
+  <!-- Minimalist tick ticks and outer clock face ring -->
+  <circle cx="96" cy="96" r="64" fill="none" stroke="#27272a" stroke-width="1.5" />
+  <circle cx="96" cy="96" r="60" fill="none" stroke="#00d8f6" stroke-width="1" stroke-dasharray="1 8" />
+  
+  <!-- Hour Hand -->
+  <line x1="96" y1="96" x2="96" y2="60" stroke="#f4f4f5" stroke-width="3" stroke-linecap="round" transform="rotate(28, 96, 96)" />
+  <!-- Minute Hand -->
+  <line x1="96" y1="96" x2="135" y2="96" stroke="#a1a1aa" stroke-width="2" stroke-linecap="round" transform="rotate(145, 96, 96)" />
+  <!-- Center Pin -->
+  <circle cx="96" cy="96" r="4" fill="#00d8f6" />
+  <circle cx="96" cy="96" r="2" fill="#09090b" />
+</svg>
